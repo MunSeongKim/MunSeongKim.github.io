@@ -1,0 +1,46 @@
+div.prizeTab {
+	margin: 30px 0 0 0;
+	padding: 0;
+}
+
+
+div.prizeTab ul.nav li a {
+	margin-bottom: 15px;
+	padding-right: 20px;
+	background-color: #333333;
+	color: white;
+}
+
+div.prizeTab ul.nav li.active a {
+	padding-right: 30px;
+	background-color: white;
+	color: #F05F40;
+}
+
+div.prizeTabContent {
+	background-color: #33333377;
+	height: 468px;
+	width: auto;
+}
+
+div.prizeTabPane {
+	height: 100%;
+	width: auto;
+}
+
+div.prizeTabPane img {
+	height: 100%;
+	width:auto;
+}
+
+@media screen and (max-width: 769px) {
+	div.prizeTabContent {
+		height: 320px;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	div.prizeTabContent {
+		height: 220px;
+	}
+}

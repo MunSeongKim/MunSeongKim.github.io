@@ -1,0 +1,73 @@
+<table class="projectDetail">
+	<thead>
+		<tr>
+			<th scope="cols" class="text-center">2015년</th>
+			<th scope="cols" class="text-center">공과대학 학술제</th>
+			<th scope="cols" class="text-center">순천향대학교 공과대학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">프로젝트 이름</th>
+			<td colspan="2" class="text-center">IoT 스마트 강의실</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<dl class="projectDesc">
+					<dt>설명</dt>
+					<dd>
+						강의실에 설치한 환경 센서 데이터를 수집하여 데이터베이스 서버에 저장<br>
+						수집한 환경 데이터를 처리하여 상황인지 후 환풍기 등의 기기 제어 이벤트 발생<br>
+						제 3자에게 강의실 환경 정보에 접근할 수 있는 방법 제공
+					</dd>
+					<dt>기능</dt>
+					<dd>
+						마이크로 프로세서(아두이노)와 임베디드 보드(비글본블랙)을 사용하여 수집 모듈 제작, 시리얼 통신을 기반으로 데이터 수집<br>
+						릴레이 스위치를 사용하여 마이크로 프로세서에서 전자기기 제어 구현<br>
+						JSP와 Jersey 프레임워크를 사용하여 RESTful API를 통해 실시간 환경 정보 제공
+					</dd>
+					<dt>프로젝트 소스</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-12 col-sm-12">
+								<p>시스템 구성도</p>
+								<a href="img/project/fullsize/2015_academy_seminar/1.jpg" target="_blank">
+									<img src="img/project/fullsize/2015_academy_seminar/1.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-12 col-sm-12">
+								<p>시나리오 & 기대효과</p>
+								<a href="img/project/fullsize/2015_academy_seminar/2.jpg" target="_blank">
+									<img src="img/project/fullsize/2015_academy_seminar/2.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+						</div>
+					</dd>
+					<dt>학술제 전시 포스터</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-12 col-sm-12">
+								<p>전시 포스터</p>
+								<a href="img/project/fullsize/2015_academy_seminar/3.jpg" target="_blank">
+									<img src="img/project/fullsize/2015_academy_seminar/3.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  });
+  
+  $('#projectTabs a').click(function(e){
+      e.preventDefault()
+      $(this).tab('show')
+  });
+</script>

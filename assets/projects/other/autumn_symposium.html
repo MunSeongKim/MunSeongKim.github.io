@@ -1,0 +1,84 @@
+<table class="projectDetail">
+	<thead>
+		<tr>
+			<th scope="cols" class="text-center">2015년</th>
+			<th scope="cols" class="text-center">추계학술대회</th>
+			<th scope="cols" class="text-center">한국지식정보기술학회</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">프로젝트 이름</th>
+			<td colspan="2" class="text-center">웹 서비스 기반 IoT 프록시 서버</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<dl class="projectDesc">
+					<dt>설명</dt>
+					<dd>
+						웹 환경과 IoT 환경을 위한 HTTP-CoAP 변환 프록시 서버 구현<br>
+						웹 서비스와 IoT 네트워크를 분리하고 제한적 네트워크 환경에서 원할한 통신을 지원<br>
+						내부 IoT 네트워크의 직접 접근을 차단함으로써 보안 향상 유도<br>
+						Apache proxy와 squid3 모듈을 사용하여 구현
+					</dd>
+					<dt>기능</dt>
+					<dd>
+						내부 IoT 네트워크로의 직접 접근 제어<br>
+						웹 서비스와 IoT 네트워크를 연결하기 위한 HTTP-CoAP 프로토콜 변환<br>
+						리버스 프록시로써 웹 서비스 데이터 캐싱
+					</dd>
+					<dt>프로젝트 소스</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-5 col-sm-5">
+								<p>시스템 구성도</p>
+								<a href="img/project/fullsize/autumn_symposium/1.jpg" target="_blank">
+									<img src="img/project/fullsize/autumn_symposium/1.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+							<div class="col-lg-7 col-sm-7">
+								<p>Squid3 모듈 환경설정 소스 일부</p>
+								<a href="img/project/fullsize/autumn_symposium/2.jpg" target="_blank">
+									<img src="img/project/fullsize/autumn_symposium/2.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+						</div>
+					</dd>
+					<dt>구현 테스트</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-12 col-sm-12">
+								<p>실행화면</p>
+								<a href="img/project/fullsize/autumn_symposium/3.jpg" target="_blank">
+									<img src="img/project/fullsize/autumn_symposium/3.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+						</div>
+					</dd>
+					<dt>학술논문</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-12 col-sm-12">
+								<p><i class="fa fa-file" aria-hidden="true"></i> 웹 서비스 기반 IoT 프록시 서버
+								<a class="projectLink" href="img/project/fullsize/autumn_symposium/thesis.pdf" target="_blank">
+									<i class="fa fa-hand-o-right small" aria-hidden="true"></i> 보러가기
+								</a>
+								</p>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  });
+  
+  $('#projectTabs a').click(function(e){
+      e.preventDefault()
+      $(this).tab('show')
+  });
+</script>

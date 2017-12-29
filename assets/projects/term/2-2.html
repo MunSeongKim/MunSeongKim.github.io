@@ -1,0 +1,122 @@
+<ul class="nav nav-tabs nav-justified" role="tablist" id="projectTabs">
+    <li role="presentation" class="active"><a href="#1" role="tab" data-toggle="tab">창의적웹프로그래밍</a></li>
+    <li role="presentation"><a href="#2" role="tab" data-toggle="tab">알고리즘</a></li>
+</ul>
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane fade in active" id="1"><table class="projectDetail">
+            <thead>
+                <tr>
+                    <th scope="cols" class="text-center">2학년 2학기</th>
+                    <th scope="cols" class="text-center">창의적웹프로그래밍</th>
+                    <th scope="cols" class="text-center">천인국 교수님</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">프로젝트 이름</th>
+                    <td colspan="2" class="text-center">신입생을 위한 교내 건물안내지도</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <dl class="projectDesc">
+                            <dt>설명</dt>
+                            <dd>
+                                교내 건물번호와 위치를 잘 모르는 신입생을 위한 교내 건물안내지도 제작<br>
+                                HTML5, CSS, JavaScript&JQuery를 이용하여 웹 페이지로 구현
+                            </dd>
+                            <dt>기능</dt>
+                            <dd>
+                                마우스 또는 키보드 입력에 대한 처리 기능<br>
+                                강의실 번호를 통한 건물 번호 및 위치 조회 기능
+                            </dd>
+                            <dt>프로그램 소스</dt>
+                            <dd>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6">
+                                        <p>JavaScript - UI Event 처리 일부</p>
+                                        <a href="img/project/fullsize/2-2/4.jpg" target="_blank">
+                                            <img src="img/project/fullsize/2-2/4.jpg" class="img-responsive center-block" alt=""></a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <p>JavaScript - 건물번호 별 처리 일부</p>
+                                        <a href="img/project/fullsize/2-2/5.jpg" target="_blank">
+                                            <img src="img/project/fullsize/2-2/5.jpg" class="img-responsive center-block" alt=""></a>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>실행 화면</dt>
+                            <dd><a href="img/project/fullsize/2-2/6.jpg" target="_blank">
+                                <img src="img/project/fullsize/2-2/6.jpg" class="img-responsive center-block" alt=""></a></dd>
+                        </dl>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="2">
+        <table class="projectDetail">
+            <thead>
+                <tr>
+                    <th scope="cols" class="text-center">2학년 2학기</th>
+                    <th scope="cols" class="text-center">알고리즘</th>
+                    <th scope="cols" class="text-center">하상호 교수님</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">프로젝트 이름</th>
+                    <td colspan="2" class="text-center">지하철 노선도 프로그램</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <dl class="projectDesc">
+                            <dt>설명</dt>
+                            <dd>
+                                Dijkstra 알고리즘(최단 경로 탐색 알고리즘)을 이용하여 기존 지하철 노선도의 출발역과 도착역간의 최단 경로를 결정<br>
+                                HTML5, CSS, JavaScript를 이용하여 웹 페이지로 구현
+                            </dd>
+                            <dt>기능</dt>
+                            <dd>
+                                Marker(Image)를 이용해 사용자가 현재 가리키는 역, 최단 경로의 경유역을 출력<br>
+                                마우스 클릭 또는 검색 창에 직접 타이핑 입력을 통한 출발/도착역 지정<br>
+                                최단 경로간 환승역, 경유역의 개수와 소요시간을 출력하는 기능 제공
+                            </dd>
+                            <dt>프로그램 소스</dt>
+                            <dd>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6">
+                                        <p>JavaScript - Dijkstra 구현</p>
+                                        <a href="img/project/fullsize/2-2/1.jpg" target="_blank">
+                                            <img src="img/project/fullsize/2-2/1.jpg" class="img-responsive center-block" alt=""></a>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <p>JavaScript - UI Event 처리 일부</p>
+                                        <a href="img/project/fullsize/2-2/2.jpg" target="_blank">
+                                            <img src="img/project/fullsize/2-2/2.jpg" class="img-responsive center-block" alt=""></a>
+                                    </div>
+                                </div>
+                            </dd>
+                            <dt>실행 화면</dt>
+                            <dd><a href="img/project/fullsize/2-2/3.jpg" target="_blank">
+                                <img src="img/project/fullsize/2-2/3.jpg" class="img-responsive center-block" alt=""></a></dd>
+                            <dt>실행영상</dt>
+                            <dd class="text-center"><video src="video/algorithm.mp4" width="60%" controls muted>실행 불가능한 브라우저입니다.</video></dd>
+                        </dl>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  });
+  
+  $('#projectTabs a').click(function(e){
+      e.preventDefault()
+      $(this).tab('show')
+  });
+</script>

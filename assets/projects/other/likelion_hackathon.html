@@ -1,0 +1,94 @@
+<table class="projectDetail">
+	<thead>
+		<tr>
+			<th scope="cols" class="text-center">2017년</th>
+			<th scope="cols" class="text-center">해커톤</th>
+			<th scope="cols" class="text-center">멋쟁이사자처럼</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">프로젝트 이름</th>
+			<td colspan="2" class="text-center">Diary for - 당신만을 위한 단 하나의 일기</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<dl class="projectDesc">
+					<dt>설명</dt>
+					<dd>
+						하루의 스케줄을 입력하고 해당 계획을 달성했는지를 체크하여 하루를 어떻게 보냈는지 돌아볼 수 있도록 유도<br>
+						오늘에 대한 느낀점을 기록하고, 내일에 대한 목표를 입력하여 계획적인 하루를 유도<br>
+						하루하루의 목표 달성률을 통합하여 일주일 동안의 목표치를 보여줌으로써 자신에 대한 피드백을 제공하는 개인 스케줄러<br>
+						Ruby on Rails 기반으로 w3school의 부트스트랩을 이용한 웹 서비스 구현
+					</dd>
+					<dt>기능</dt>
+					<dd>
+						카카오 로그인 API를 사용하고, devise gem을 이용하여 로그인 및 회원 관리 기능 적용<br>
+						cancancan, rolify gem을 이용하여 사용자 역할과 접근 권한을 부여<br>
+						스케줄에 체크기능을 추가하여 스케줄 이행에 대해 피드백을 제공<br>
+						오늘의 목표 달성률을 일주일 단위로 평가하는 그래프를 제공<br>
+						어제의 기록을 확인할 수 있는 네비게이션 기능 구현<br>
+					</dd>
+					<dt>프로젝트 소스</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<p>HTML 소스 일부</p>
+								<a href="img/project/fullsize/likelion_hackathon/1.jpg" target="_blank">
+									<img src="img/project/fullsize/likelion_hackathon/1.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>자바스크립트 소스 일부</p>
+								<a href="img/project/fullsize/likelion_hackathon/2.jpg" target="_blank">
+									<img src="img/project/fullsize/likelion_hackathon/2.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<p>컨트롤러 모듈 소스 일부</p>
+								<a href="img/project/fullsize/likelion_hackathon/3.jpg" target="_blank">
+									<img src="img/project/fullsize/likelion_hackathon/3.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>모델 모듈 소스 일부</p>
+								<a href="img/project/fullsize/likelion_hackathon/4.jpg" target="_blank">
+									<img src="img/project/fullsize/likelion_hackathon/4.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+						</div>
+					</dd>
+					<dt>실행화면</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<p>로그인 화면</p>
+								<a href="img/project/fullsize/likelion_hackathon/5.jpg" target="_blank">
+									<img src="img/project/fullsize/likelion_hackathon/5.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>메인 화면</p>
+								<a href="img/project/fullsize/likelion_hackathon/6.jpg" target="_blank">
+									<img src="img/project/fullsize/likelion_hackathon/6.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  });
+  
+  $('#projectTabs a').click(function(e){
+      e.preventDefault()
+      $(this).tab('show')
+  });
+</script>

@@ -1,0 +1,46 @@
+table.projectDetail {
+    margin:0 auto;
+    border-collapse: collapse;
+    text-align: left;
+    line-height: 1.5;
+    width: 100%;
+}
+table.projectDetail thead th {
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    color: #F05F40;
+    border-bottom: 3px solid #F05F40;
+}
+table.projectDetail tbody th {
+    width: 30%;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: central;
+    border-bottom: 1px solid #ccc;
+    background: #f3f6f7;
+    color:black;
+}
+table.projectDetail td {
+    width: 70%;
+    padding: 10px;
+    vertical-align: central;
+    color:black;
+}
+
+dl.projectDesc dd {
+    font-size: 0.88em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+dl.projectDesc dd p {
+    font-size: 1.0em;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+
+video {
+    margin: 10px 0;
+}

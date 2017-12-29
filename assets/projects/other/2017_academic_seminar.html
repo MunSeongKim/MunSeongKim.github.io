@@ -1,0 +1,107 @@
+<table class="projectDetail">
+	<thead>
+		<tr>
+			<th scope="cols" class="text-center">2017년</th>
+			<th scope="cols" class="text-center">공과대학 학술제</th>
+			<th scope="cols" class="text-center">순천향대학교 공과대학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">프로젝트 이름</th>
+			<td colspan="2" class="text-center">MVC 모델을 이용한 빅데이터 활용 웹 서비스 설계 및 구현</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<dl class="projectDesc">
+					<dt>설명</dt>
+					<dd>
+						국내여행에 관련된 블로그 포스트들을 수집하고 텍스트 분석을 통해 여행지 언급 횟수를 추출하여 지도 기반의 웹 서비스를 제공<br>
+						수집: Python 언어를 기반으로 Selenium, PhanthomJS, BeautifulSoup4 모듈을 사용하여 포스트의 데이터 수집<br>
+						처리: Elasticsearch의 Percolator 기능을 사용하여 여행지 추출 후 언급횟수 누적, 데이터 저장 및 검색 기능 구현<br>
+						표현: Ruby on Rails 프레임워크를 사용하여 MVC 패턴을 적용하여 웹 서버 구현, jQuery와 구글지도 API로 인터페이스 구현
+					</dd>
+					<dt>기능</dt>
+					<dd>
+						구글 지도 마커를 통해 집계 결과 제공, 마커 클릭시 해당 지역의 시 단위로 확대<br>
+						검색 기능 제공, 검색 시 해당 지역을 중심으로 옮기고 관련 블로그 10개 리스트를 좌측에 출력<br>
+						RESTful API를 통해 지도의 확대 축소 시 마커 업데이트 실행<br>
+						매시간 100개의 블로그 포스트를 수집하여 처리 후 저장<br>
+					</dd>
+					<dt>프로그램 소스</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<p>데이터 수집 알고리즘</p>
+								<a href="img/project/fullsize/2017_academy_seminar/1.jpg" target="_blank">
+									<img src="img/project/fullsize/2017_academy_seminar/1.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>소프트웨어 스택</p>
+								<a href="img/project/fullsize/2017_academy_seminar/2.jpg" target="_blank">
+									<img src="img/project/fullsize/2017_academy_seminar/2.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<p>웹 크롤러 소스 일부</p>
+								<a href="img/project/fullsize/2017_academy_seminar/3.jpg" target="_blank">
+									<img src="img/project/fullsize/2017_academy_seminar/3.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>웹 서버의 컨트롤러 모듈 소스 일부</p>
+								<a href="img/project/fullsize/2017_academy_seminar/4.jpg" target="_blank">
+									<img src="img/project/fullsize/2017_academy_seminar/4.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<p>웹 페이지 소스 일부</p>
+								<a href="img/project/fullsize/2017_academy_seminar/5.jpg" target="_blank">
+									<img src="img/project/fullsize/2017_academy_seminar/5.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>구글 지도를 랜더링 하는 자바스크립트 소스 일부</p>
+								<a href="img/project/fullsize/2017_academy_seminar/6.jpg" target="_blank">
+									<img src="img/project/fullsize/2017_academy_seminar/6.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+						</div>
+					</dd>
+					<dt>실행 화면</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-5 col-sm-5">
+								<p>전시 포스터</p>
+								<a href="img/project/fullsize/2017_academy_seminar/7.jpg" target="_blank">
+									<img src="img/project/fullsize/2017_academy_seminar/7.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+							<div class="col-lg-7 col-sm-7">
+								<p>웹 페이지 화면</p>
+								<a href="img/project/fullsize/2017_academy_seminar/8.jpg" target="_blank">
+									<img src="img/project/fullsize/2017_academy_seminar/8.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  });
+  
+  $('#projectTabs a').click(function(e){
+      e.preventDefault()
+      $(this).tab('show')
+  });
+</script>

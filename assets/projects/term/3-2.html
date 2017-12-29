@@ -1,0 +1,92 @@
+<table class="projectDetail">
+	<thead>
+		<tr>
+			<th scope="cols" class="text-center">3학년 2학기</th>
+			<th scope="cols" class="text-center">데이터베이스</th>
+			<th scope="cols" class="text-center">이해각 교수님</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">프로젝트 이름</th>
+			<td colspan="2" class="text-center">택배회사 배송관리 데이터베이스 시스템</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<dl class="projectDesc">
+					<dt>설명</dt>
+					<dd>
+						교수님께서 제시한 가상 택배회사의 요구 사항을 기반으로 데이터베이스 시스템을 제작<br>
+						배송관리, 직원관리, 물품관리, 고객관리 등의 기능 구현<br>
+						JSP와 HTML, CSS, JavaScript를 사용해 웹 기반 환경으로 제작, MySQL로 데이터베이스 구현
+					</dd>
+					<dt>기능</dt>
+					<dd>
+						MySQL과 phpMyAdmin 프로그램을 사용해 데이터베이스 구축 및 관계 설정<br>
+						JDBC 커넥터를 이용해 JSP 페이지와 데이터베이스 연결<br>
+						웹 페이지를 기반으로 CRUD 연산 구현<br>
+						관리자, 직원, 고객 로그인 화면 구현<br>
+					</dd>
+					<dt>프로그램 소스</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<p>E-R 다이어그램</p>
+								<a href="img/project/fullsize/3-2/1.jpg" target="_blank">
+									<img src="img/project/fullsize/3-2/1.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>릴레이션 스키마</p>
+								<a href="img/project/fullsize/3-2/2.jpg" target="_blank">
+									<img src="img/project/fullsize/3-2/2.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<p>JSP 구현 일부</p>
+								<a href="img/project/fullsize/3-2/3.jpg" target="_blank">
+									<img src="img/project/fullsize/3-2/3.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>HTML 로그인 페이지 구현 일부</p>
+								<a href="img/project/fullsize/3-2/4.jpg" target="_blank">
+									<img src="img/project/fullsize/3-2/4.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+						</div>
+					</dd>
+					<dt>실행 화면</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<p>데이터베이스 구축 화면</p>
+								<a href="img/project/fullsize/3-2/5.jpg" target="_blank">
+									<img src="img/project/fullsize/3-2/5.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>로그인 화면</p>
+								<a href="img/project/fullsize/3-2/6.jpg" target="_blank">
+									<img src="img/project/fullsize/3-2/6.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  });
+  
+  $('#projectTabs a').click(function(e){
+      e.preventDefault()
+      $(this).tab('show')
+  });
+</script>

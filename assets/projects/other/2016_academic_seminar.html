@@ -1,0 +1,91 @@
+<table class="projectDetail">
+	<thead>
+		<tr>
+			<th scope="cols" class="text-center">2016년</th>
+			<th scope="cols" class="text-center">공과대학 학술제</th>
+			<th scope="cols" class="text-center">순천향대학교 공과대학</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th scope="row">프로젝트 이름</th>
+			<td colspan="2" class="text-center">마이크로 컨트롤러를 활용한 마트 결제 시스템의 개선</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<dl class="projectDesc">
+					<dt>설명</dt>
+					<dd>
+						소비자가 카트에 물건을 담을 때 카트에 있는 바코드를 인식시키면 물품 리스트와 가격을 저장<br>
+						계산대에 카트가 접근하면 NFC 태그를 이용해 물품 리스트와 가격을 캐셔에게 제공<br>
+						캐셔는 물품 리스트와 가격을 소비자에게 확인 후 가격 결제
+					</dd>
+					<dt>기능</dt>
+					<dd>
+						마이크로 컨트롤러(아두이노)와 바코드 스캐너를 이용해 물품 정보 인식<br>
+						NFC 태그를 이용해 캐셔와 카트간에 물품 리스트, 가격 정보 전송<br>
+						실제 프로젝트는 HTML, JSP와 Node.js를 이용해 시뮬레이터 구현
+					</dd>
+					<dt>프로젝트 소스</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-6 col-sm-6">
+								<p>시스템 구성도</p>
+								<a href="img/project/fullsize/2016_academy_seminar/1.jpg" target="_blank">
+									<img src="img/project/fullsize/2016_academy_seminar/1.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>알고리즘</p>
+								<a href="img/project/fullsize/2016_academy_seminar/2.jpg" target="_blank">
+									<img src="img/project/fullsize/2016_academy_seminar/2.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+						</div>
+						<div class="row" style="margin-top:15px;">
+							<div class="col-lg-6 col-sm-6">
+								<p>계산 후 데이터 갱신 JSP 소스 일부</p>
+								<a href="img/project/fullsize/2016_academy_seminar/3.jpg" target="_blank">
+									<img src="img/project/fullsize/2016_academy_seminar/3.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+							<div class="col-lg-6 col-sm-6">
+								<p>NFC 기능을 구현한 Node.js용 자바스크립트 소스 일부</p>
+								<a href="img/project/fullsize/2016_academy_seminar/4.jpg" target="_blank">
+									<img src="img/project/fullsize/2016_academy_seminar/4.jpg" class="img-responsive center-block" alt="">
+									</a>
+							</div>
+						</div>
+					</dd>
+					<dt>결과</dt>
+					<dd>
+						<div class="row">
+							<div class="col-lg-3 col-sm-3">
+								<p>전시 포스터</p>
+								<a href="img/project/fullsize/2016_academy_seminar/5.jpg" target="_blank">
+									<img src="img/project/fullsize/2016_academy_seminar/5.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+							<div class="col-lg-9 col-sm-9">
+								<p>실행화면</p>
+								<a href="img/project/fullsize/2016_academy_seminar/6.jpg" target="_blank">
+									<img src="img/project/fullsize/2016_academy_seminar/6.jpg" class="img-responsive center-block" alt="">
+								</a>
+							</div>
+						</div>
+					</dd>
+				</dl>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<script>
+  $(function () {
+    $('#myTab a:first').tab('show')
+  });
+  
+  $('#projectTabs a').click(function(e){
+      e.preventDefault()
+      $(this).tab('show')
+  });
+</script>

@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700);
+.year-section {
+  margin: 0 auto;
+  color: white;
+  font-size: 1.2em;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+}
+
+.year-section a {
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.year-section a:hover {
+	cursor: pointer;
+	text-shadow: #F05F40 1px 1px;
+}
+
+.year-section .big,
+.year-section .aside {
+	margin-top: 30px;
+}
+
+.year-section .year {
+  font-weight: 800;
+  margin-top: 25px;
+}
+.year-section .big {
+  font-size: large;  
+  font-weight: 100;
+  margin-bottom: .5em;
+}
+.year-section .aside {
+  font-size: smaller;
+  border-left: 2px solid #F05F40;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+}
+.year-section ul {
+  list-style: circle;
+  margin: 0;
+  padding: 0;
+  padding-left: 20px;
+}
+
+.year-section ul li {
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+.panel-collapse {
+	border-top: 2px solid #F05F40;
+	border-bottom: 2px solid #F05F40;
+}
+
+dt {
+	margin: 5px 0 10px 0;
+}
+
+.collapseClose {
+	margin-top: 15px;
+	float: right;
+}
+
+.panel-body a {
+	text-shadow: 1px 1px 2px #F05F40;
+	display: inline;
+}
+
+.panel-body a:hover {
+	cursor: pointer;
+	text-decoration: underline !important;
+	text-shadow: 0 !important;
+}
+
+.carousel-inner h4 {
+	background-color: white;
+	color: black;
+}
+
+.carousel-control > * {
+	color: #F05F40;
+	text-shadow: 0 !important;
+}
+
+.carousel-indicators li {
+	border-color: #F05F40;
+}
+
+.carousel-indicators li.active {
+	background-color: #F05F40;
+}
