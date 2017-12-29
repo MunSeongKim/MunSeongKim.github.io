@@ -1486,42 +1486,64 @@
 				<div role="tabpanel" class="tabpanel prizeTab">
 					<div class="col-lg-4 col-md-4 col-sm-4 text-right">
 					<!-- Nav tabs -->
-						<ul class="nav nav-pills nav-stacked prizeTabNav" role="tablist">
-							<li role="presentation" class="active"><a href="#2015_academic_seminar" aria-controls="2015_academic_seminar" role="tab" data-toggle="pill">2015 공과대학 학술제</a></li>
-							<li role="presentation"><a href="#autumn_symposium" aria-controls="autumn_symposium" role="tab" data-toggle="pill">한국지식정보기술학회 추계학술대회</a></li>
-							<li role="presentation"><a href="#sch_startup" aria-controls="sch_startup" role="tab" data-toggle="pill">SCH SK청년비상 창업아이템 경진대회</a></li>
-							<li role="presentation"><a href="#3s_startup" aria-controls="3s_startup" role="tab" data-toggle="pill">SK청년비상 3S 창업아이템 경진대회</a></li>
-							<li role="presentation"><a href="#2016_academic_seminar" aria-controls="2016_academic_seminar" role="tab" data-toggle="pill">2016 공과대학 학술제</a></li>
-							<li role="presentation"><a href="#2017_ce_seminar" aria-controls="2017_ce_seminar" role="tab" data-toggle="pill">2017 컴퓨터공학과 학술제</a></li>
-							<li role="presentation"><a href="#2017_academic_seminar" aria-controls="2017_academic_seminar" role="tab" data-toggle="pill">2017 공과대학 학술제</a></li>
-						</ul>
+						<div id="navTab">
+							<ul class="nav nav-pills nav-stacked prizeTabNav" role="tablist" id="naviTab">
+								<li role="presentation" class="active"><a href="#2015_academic_seminar" aria-controls="2015_academic_seminar" role="tab" data-toggle="pill">2015 공과대학 학술제</a></li>
+								<li role="presentation"><a href="#autumn_symposium" aria-controls="autumn_symposium" role="tab" data-toggle="pill">한국지식정보기술학회 추계학술대회</a></li>
+								<li role="presentation"><a href="#sch_startup" aria-controls="sch_startup" role="tab" data-toggle="pill">SCH SK청년비상 창업아이템 경진대회</a></li>
+								<li role="presentation"><a href="#3s_startup" aria-controls="3s_startup" role="tab" data-toggle="pill">SK청년비상 3S 창업아이템 경진대회</a></li>
+								<li role="presentation"><a href="#2016_academic_seminar" aria-controls="2016_academic_seminar" role="tab" data-toggle="pill">2016 공과대학 학술제</a></li>
+								<li role="presentation"><a href="#2017_ce_seminar" aria-controls="2017_ce_seminar" role="tab" data-toggle="pill">2017 컴퓨터공학과 학술제</a></li>
+								<li role="presentation"><a href="#2017_academic_seminar" aria-controls="2017_academic_seminar" role="tab" data-toggle="pill">2017 공과대학 학술제</a></li>
+							</ul>
+						</div>
+						
+						<div class="dropdownTab" id="dropdownTab">
+						  <ul class="nav nav-pills prizeTabNav" role="tablist">
+							<li role="presentation" class="dropdown">
+								<button class="btn btn-default btn-block dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="false">
+									2015 공과대학 학술제 <span class="badge"><span class="caret"></span></span>
+								</button>
+								  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1" id="dropTab">
+									<li role="presentation" class="active"><a href="#2015_academic_seminar" role="pill" data-toggle="tab" aria-controls="2015_academic_seminar" tabindex="-1">2015 공과대학 학술제</a></li>
+									<li role="presentation"><a href="#autumn_symposium" role="tab" data-toggle="pill" aria-controls="autumn_symposium" tabindex="-1">한국지식정보기술학회 추계학술대회</a></li>
+									<li role="presentation"><a href="#sch_startup" role="tab" data-toggle="pill" aria-controls="sch_startup" tabindex="-1">SCH SK청년비상 창업아이템 경진대회</a></li>
+									<li role="presentation"><a href="#3s_startup" role="tab" data-toggle="pill" aria-controls="3s_startup" tabindex="-1">SK청년비상 3S 창업아이템 경진대회</a></li>
+									<li role="presentation"><a href="#2016_academic_seminar" role="tab" data-toggle="pill" aria-controls="2016_academic_seminar" tabindex="-1">2016 공과대학 학술제</a></li>
+									<li role="presentation"><a href="#2017_ce_seminar" role="tab" data-toggle="pill" aria-controls="2017_ce_seminar" tabindex="-1">2017 컴퓨터공학과 학술제</a></li>
+									<li role="presentation"><a href="#2017_academic_seminar" role="tab" data-toggle="pill" aria-controls="2017_academic_seminar" tabindex="-1">2017 공과대학 학술제</a></li>
+								  </ul>
+							</li>
+						</div>
+						
 					</div>
 				<!-- Tab panes -->
 					<div class="col-lg-8 col-md-8 col-sm-8">
 						<div class="tab-content prizeTabContent">
-							<div role="tabpanel" class="tab-pane prizeTabPane active" id="2015_academic_seminar">
+							<div role="tabpanel" class="tab-pane fade in active prizeTabPane" id="2015_academic_seminar">
 								<img src="img/prize/2015_academic_seminar.jpg" class="center-block">
 							</div>
-							<div role="tabpanel" class="tab-pane prizeTabPane" id="autumn_symposium">
+							<div role="tabpanel" class="tab-pane fade prizeTabPane" id="autumn_symposium">
 								<img src="img/prize/autumn_symposium.jpg" class="center-block">
 							</div>
-							<div role="tabpanel" class="tab-pane prizeTabPane" id="sch_startup">
+							<div role="tabpanel" class="tab-pane fade prizeTabPane" id="sch_startup">
 								<img src="img/prize/sch_startup.jpg" class="center-block">
 							</div>
-							<div role="tabpanel" class="tab-pane prizeTabPane" id="3s_startup">
+							<div role="tabpanel" class="tab-pane fade prizeTabPane" id="3s_startup">
 								<img src="img/prize/3s_startup.jpg" class="center-block">
 							</div>
-							<div role="tabpanel" class="tab-pane prizeTabPane" id="2016_academic_seminar">
+							<div role="tabpanel" class="tab-pane fade prizeTabPane" id="2016_academic_seminar">
 								<img src="img/prize/2016_academic_seminar.jpg" class="center-block">
 							</div>
-							<div role="tabpanel" class="tab-pane prizeTabPane" id="2017_ce_seminar">
+							<div role="tabpanel" class="tab-pane fade prizeTabPane" id="2017_ce_seminar">
 								<img src="img/prize/2017_ce_seminar.jpg" class="center-block">
 							</div>
-							<div role="tabpanel" class="tab-pane prizeTabPane" id="2017_academic_seminar">
+							<div role="tabpanel" class="tab-pane fade prizeTabPane" id="2017_academic_seminar">
 								<img src="img/prize/2017_academic_seminar.jpg" class="center-block">
 							</div>
 						</div>
 					</div>
+					
 				</div>
             </div>
         </div>

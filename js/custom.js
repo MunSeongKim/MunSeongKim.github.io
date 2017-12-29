@@ -50,6 +50,33 @@ $(document).ready(function(){
 		var imgTarget = "#" + e.target.id + "-img";
 		$(imgTarget).carousel('pause');
 	});
+	
+	$('ul.dropdown-menu li > a').click(function(){
+		$('.dropdown-toggle').text($(this).text()).append(" <span class='badge'><span class='caret'></span></span>");
+	});
+	
+	$(window).resize(function() {
+		if(this.resizeTO) {
+			clearTimeout(this.resizeTO);
+		}
+		this.resizeTO = setTimeout(function() {
+			$(this).trigger('resizeEnd');
+		}, 100);
+	});
+
+	$(window).on('resizeEnd', function() {
+		var tabTarget = "";
+		if( $(this).width() >= 768 ){
+			tabTarget = "#naviTab a[href='#" + $("div.tab-pane.active").attr("id") + "']";
+			$(tabTarget).tab('show');
+		} else {
+			tabTarget = "#dropTab a[href='#" + $("div.tab-pane.active").attr("id") + "']";
+			$('.dropdown-toggle').text($(tabTarget).text()).append(" <span class='badge'><span class='caret'></span></span>");
+			$(tabTarget).tab('show');
+		}
+			
+	});
+	
 
 });
 

@@ -3,15 +3,19 @@ div.prizeTab {
 	padding: 0;
 }
 
-
-div.prizeTab ul.nav li a {
+div#navTab ul.nav li a {
 	margin-bottom: 15px;
 	padding-right: 20px;
 	background-color: #333333;
 	color: white;
 }
 
-div.prizeTab ul.nav li.active a {
+div#navTab ul.nav li a:hover {
+	color: #eb3812;
+	background-color: #000000;
+}
+
+div#navTab ul.nav li.active a {
 	padding-right: 30px;
 	background-color: white;
 	color: #F05F40;
@@ -31,16 +35,90 @@ div.prizeTabPane {
 div.prizeTabPane img {
 	height: 100%;
 	width:auto;
+	box-shadow: 5px 5px 8px black;
 }
 
+div#dropdownTab ul.nav,
+div#dropdownTab ul.nav li,
+ul.dropdown-menu,
+ul.dropdown-menu li {
+	width: 100%;
+}
+
+ul.dropdown-menu,
+ul.dropdown-menu li {
+	margin: 0;
+	padding: 0;
+}
+
+ul.dropdown-menu li a {
+	background-color: #333333;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+	
+	border-bottom: 0.5px solid black;
+}
+
+ul.dropdown-menu li a:hover {
+	color: #eb3812;
+	background-color: #000000;
+}
+
+ul.dropdown-menu li.active a {
+	background-color: white;
+	color: #F05F40;
+}
+
+ul.dropdown-menu li.active a:hover {
+	background-color: white;
+	color: #F05F40;
+}
+
+div#navTab {
+	display: block;
+}
+div#dropdownTab {
+	display: none;
+}
+	
+/* Media queries */
 @media screen and (max-width: 769px) {
 	div.prizeTabContent {
-		height: 320px;
+		height: 300px;
 	}
+	
+	div.prizeTabPane img {
+		box-shadow: 4px 4px 6px black;
+	}
+
+	div#navTab {
+		display: none;
+	}
+	div#dropdownTab {
+		margin-bottom: 10px;
+		display: block;
+	}
+	
 }
 
 @media screen and (max-width: 375px) {
 	div.prizeTabContent {
 		height: 220px;
 	}
+	
+	div.prizeTabPane img {
+		box-shadow: 3px 3px 5px black;
+	}
+
+	div#navTab {
+		display: none;
+	}
+	div#dropdownTab {
+		margin-bottom: 10px;
+		display: block;
+	}
 }
+
+
+
